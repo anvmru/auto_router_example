@@ -33,6 +33,7 @@ class AuthBloc extends Bloc<AuthBlocEvent, AuthBlocState> {
     if (initialState is IniAuthBlocState) {
       _context = initialState.context;
     }
+    add(GotoScreenEvent(EnumAuthScreens.Page1));
   }
 
   @override

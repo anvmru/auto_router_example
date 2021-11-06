@@ -41,6 +41,7 @@ class HomeBloc extends Bloc<HomeBlocEvent, HomeBlocState> {
     if(initialState is IniHomeBlocState) {
       _context = initialState.context;
     }
+    add(GotoScreenEvent(EnumHomeScreens.Page3));
   }
 
   @override

@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     return BlocProvider<HomeBloc>(
       create: (context) => HomeBloc(IniHomeBlocState(context)),
       child: AutoRouter(),
+      lazy: false,
     );
   }
 }
